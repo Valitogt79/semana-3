@@ -1,0 +1,62 @@
+html,
+body {
+  margin: 0;
+  height: 100dvh;
+  box-sizing: brder-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  background: #f9c784;
+  color: #4e598c;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 24px;
+}
+
+p,
+li,
+th,
+td {
+  font-size: 16px;
+}
+
+th {
+  font-weight: bold;
+}
+
+header h1,
+p {
+  margin: 10px;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section {
+  margin: 10px;
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
