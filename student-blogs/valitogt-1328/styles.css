@@ -1,147 +1,137 @@
-@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
-
-html,
-body {
-  margin: 0;
-  height: 100dvh;
-  box-sizing: brder-box;
-}
+@import url("htpts://fonts.googleapis.com/css2?family=Open+Sans:wght@300;@400;@700&display=swap");
 
 * {
-  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
 }
 
 body {
-  background: #f9c784;
-  color: #4e598c;
-  font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
+  background: #fff59d;
 }
 
-main {
+.header {
+  background: #1b3039;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
 }
 
-img {
+.header .logo {
+  cursor: pointer;
+}
+
+.header .logo img {
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  font-size: 700;
+  color: #eceff1;
+  text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+  color: #ffcb0e;
+}
+
+header .btn button {
+  font-weight: 700;
+  color: #1b3039;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header .btn button:hover {
+  background: #e2f1f8;
+  color: #ffcb0e;
+  transform: scale(1.1);
+}
+
+/* inicio de cards Resposive */
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: 500px;
+  margin: 10px;
+  background: white;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.cards:hover {
+  box-shadow: 3.9px 7.8px 7.8px hsl(0deg 0% 0% / 0.38);
+}
+
+.card-img img {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
-h1,
-h2,
-h3 {
-  font-size: 24px;
-}
-
-p,
-li,
-th,
-td {
-  font-size: 16px;
-}
-
-th {
-  font-weight: bold;
-}
-
-header h1,
-p {
-  margin: 10px;
-}
-
-header h1 {
+.card-body h2 {
   text-align: center;
+}
+
+.card-body p {
+  text-align: justify;
   margin-bottom: 10px;
+  padding: 5px;
 }
 
-section {
-  margin: 10px;
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer {
-  padding-top: 10px;
-  padding-bottom: 20px;
+.card-footer button {
+  width: 150px;
+  background: black;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.2s;
 }
 
-@media screen and (min-width: 900px) {
-  body {
-    margin: 0 auto;
-    max-width: 900px;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    line-height: 1.5;
-    padding: 4em 1em;
-    color: #566b78;
-  }
-
-  header h1 {
-    font-size: 2.5em;
-    font-weight: 300;
-  }
-
-  img {
-    width: 100%;
-  }
-  a {
-    border: 1px solid #e81c4f;
-    border-radius: 290486px;
-    color: black;
-    font-size: 0.6em;
-    letter-spacing: 0.2em;
-    padding: 1em 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
-  }
-
-  a:hover {
-    background: #e81c4f;
-    color: white;
-  }
-
-  h2 {
-    margin-top: 1em;
-    padding-top: 1em;
-  }
-
-  h1,
-  h2,
-  strong {
-    color: #333;
-  }
-
-  a {
-    color: #e81c4f;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  table,
-  th,
-  tr,
-  td {
-    border: 1px solid rgb(184, 184, 255);
-    border-collapse: collapse;
-  }
-
-  th {
-    font-weight: 600;
-    background: rgb(130, 218, 90);
-    color: rgb(7, 55, 99);
-  }
-
-  th,
-  td {
-    padding: 4px 8px;
-  }
-
-  td:first-child {
-    width: 18em;
-  }
-
-  td:last-child {
-    width: 22em;
-  }
+.card-footer button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
 }
